@@ -1,1 +1,9 @@
-<h1>Results</h1>
+<h1>Result</h1>
+<ul>
+  <li>Attempt: <%= @attempt%></li>
+  <li>Time: <%= @result[:time]%></li>
+  <li>Message: <%= @result[:message]%></li>
+  <li>Score: <%= @result[:score]%></li>
+</ul>
+
+<%= link_to("Play again", new_path) %>
