@@ -44,9 +44,9 @@ class GamesController < ApplicationController
   def score_and_message(attempt, letters, time)
     if included?(attempt.upcase, letters)
       score = compute_score(attempt, time)
-      [score, 'well done']
+      [score, 'Congratulations']
     else
-      [0, 'not in the grid']
+      [0, 'Sorry, it cannot be built.']
     end
   end
 end
